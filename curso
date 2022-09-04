@@ -1,5 +1,5 @@
 import re
-import pandas as pn
+import pandas as pd
 s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
 lst = re.findall('\\S+@\\S+', s)
 print(lst)
