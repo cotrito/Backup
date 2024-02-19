@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded',function(){
+                document.querySelector('#a').addEventListener('click', function() {
+                    document.getElementById('a').style.backgroundColor = 'red';
+                    var myParagraph = document.getElementById("text");
+                    myParagraph.innerText = "Incorrect";
+                });
+                document.querySelector('#b').addEventListener('click', function() {
+                    document.getElementById('b').style.backgroundColor = 'green';
+                    var myParagraph = document.getElementById("text");
+                    myParagraph.innerText = "Correct!";
+                });
+                document.querySelector('#c').addEventListener('click', function() {
+                    document.getElementById('c').style.backgroundColor = 'red';
+                    var myParagraph = document.getElementById("text");
+                    myParagraph.innerText = "Incorrect";
+                });
+                document.querySelector('#d').addEventListener('click', function() {
+                    document.getElementById('d').style.backgroundColor = 'red';
+                    var myParagraph = document.getElementById("text");
+                    myParagraph.innerText = "Incorrect";
+                });
+                document.querySelector('#e').addEventListener('click', function() {
+                    var fname = document.getElementById("question").value;
+                    var myParagraph = document.getElementById("text2");
+                    if (fname == "one"){
+                        myParagraph.innerText = "Correct";
+                        document.getElementById('question').style.backgroundColor = 'green';
+                    }
+                    else{
+                        myParagraph.innerText = "Incorrect";
+                        document.getElementById('question').style.backgroundColor = 'red';
+                    }
+
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3> Question (Answer Two) </h3>
+                <button id ="a"> One </button>
+                <button id ="b"> Two </button>
+                <button id ="c"> Three </button>
+                <button id ="d"> Four </button>
+                <h4 id="text"></h4>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3> Question (Answer one)</h3>
+                <input autofocus name ="q" id="question" placeholder="Answer" >
+                <button id ="e"> check answer </button>
+                <h4 id="text2"></h4>
+            </div>
+        </div>
+
+    </body>
+</html>
