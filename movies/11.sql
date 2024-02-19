@@ -1,0 +1,1 @@
+select distinct a.title from movies a inner join stars b on a.id = b.movie_id inner join people c on b.person_id = c.id inner join ratings d on a.id = d.movie_id where c.name ='Chadwick Boseman' order by rating desc limit 5;

@@ -1,0 +1,8 @@
+which lists the 10 HTML tags
+nav,div,a,button,span,ul,li,form,input,footer
+
+5 CSS properties you’ve used:
+navbar,buttom,footer,bloq,sidenav
+
+, as well as a brief (one-sentence) description of how you chose to use JavaScript and Bootstrap.
+i used javascript to make a buttom change windows.location

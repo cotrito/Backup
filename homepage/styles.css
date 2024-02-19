@@ -1,0 +1,67 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    height: 100%;
+  }
+
+.buttom {
+  background-color: rgba(20, 200, 50, .1);
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 200px;
+    margin: auto;
+    display: flex;
+    background-color: rgba(0, 0, 0, .1);
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+  .bloq {
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Set gray background color and 100% height */
+  .sidenav {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #888;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+  }
+
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;}
+  }
